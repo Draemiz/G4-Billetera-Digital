@@ -10,4 +10,16 @@ public class Billetera {
         this.saldo = saldoInicial;
         this.activa = true;
     }
+    public void mostrarInfo() {
+        System.out.println("**¡BIENVENIDO A SU BILLETERA DIGITAL!**");
+        System.out.println("Propietario: " + propietario);
+        System.out.println("Cuenta: " + numeroCuenta);
+        System.out.println("Saldo: $" + saldo);
+        if (activa) {
+            System.out.println("Estado: Activa");
+        } else {
+            System.out.println("Estado: Inactiva");
+        }
+    }
+
 }
