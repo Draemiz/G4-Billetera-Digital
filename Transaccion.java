@@ -1,5 +1,5 @@
 //IsmaelHernandez
-public class transacciones {
+public class Transaccion {
     //Atributos =)
     private String tipo;
     private double monto;
@@ -26,4 +26,10 @@ public void aplicarComision(double porcentaje) {
         System.out.println("Comisión (" + porcentaje + "%): $" + String.format("%.2f", comision));
         System.out.println("Monto total con comisión: $" + String.format("%.2f", total));
     }
+        public void marcarFallida() {
+        this.exitosa = false;
+        System.out.println("Transacción marcada como fallida.");
+        System.out.println("Monto afectado: $" + monto);
+    }
 }
+
