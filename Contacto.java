@@ -44,6 +44,34 @@ public class Contacto {
         this.favorito = favorito;
     }
 
-    
+    public void mostrarContacto(){
+        System.out.println("=== Contacto ===");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Cuenta: " + cuentaDestino);
+        System.out.println("Banco: " + banco);
+        if(favorito == true){
+            System.out.println("Favorito: ☻ Favorito" );
+            System.out.println();
+        }else{
+        System.out.println("Favorito: Sin Marcar");
+        System.out.println();
+        }
+    }
+    public void marcarFvorito(){
+        favorito = true;
+        System.out.println();
+        System.out.println("Contacto: "+nombre + " agregado a favoritos ★.");
+        System.out.println();
+    }
+    public void enviarDinero(double monto){
+        System.out.println();
+        System.out.println("Transferencia enviada: \n"+
+         "Destinatario: "+ nombre + 
+         "\n Cuenta: " + cuentaDestino + 
+         "\n Monto: " + monto );
+        
+        System.out.println("Completado.");
+        System.out.println();
+    }
    
 }
